@@ -303,6 +303,22 @@ entries:
     version: 0.1.0
   forecastle:
   - apiVersion: v1
+    created: "2023-04-29T03:31:15.831608082Z"
+    description: forecastle chart that runs on kubernetes
+    digest: 3cc5a349d8044df1954b1f206c37e9c813d624bd41df8b63df0f1f686c3cb619
+    home: https://github.com/stakater/Forecastle
+    icon: https://github.com/stakater/Forecastle/raw/master/assets/web/forecastle-round-100px.png
+    keywords:
+    - forecastle
+    - kubernetes
+    maintainers:
+    - email: stakater@aurorasolutions.io
+      name: Stakater
+    name: forecastle
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/forecastle-v1.0.125/forecastle-v1.0.125.tgz
+    version: v1.0.125
+  - apiVersion: v1
     created: "2023-04-22T22:49:18.705216281Z"
     description: forecastle chart that runs on kubernetes
     digest: 4e4ddec5d2a43b03fecf6262d57e78a3dc29da26f5dabd67519a30acd0c4359b
@@ -457,6 +473,30 @@ entries:
     - https://github.com/kube-core/crd-charts/releases/download/keda-2.8.2/keda-2.8.2.tgz
     version: 2.8.2
   kiali-operator:
+  - apiVersion: v2
+    appVersion: v1.67.0
+    created: "2023-04-29T03:31:16.534560275Z"
+    description: Kiali is an open source project for service mesh observability, refer
+      to https://www.kiali.io for details.
+    digest: a6933a5dbf28115a758b5793e6704a0449b9f42587cb547632c497ca434b8130
+    home: https://github.com/kiali/kiali-operator
+    icon: https://raw.githubusercontent.com/kiali/kiali.io/master/themes/kiali/static/img/kiali_logo_masthead.png
+    keywords:
+    - istio
+    - kiali
+    - operator
+    maintainers:
+    - email: kiali-users@googlegroups.com
+      name: Kiali
+      url: https://kiali.io
+    name: kiali-operator
+    sources:
+    - https://github.com/kiali/kiali
+    - https://github.com/kiali/kiali-operator
+    - https://github.com/kiali/helm-charts
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/kiali-operator-1.67.0/kiali-operator-1.67.0.tgz
+    version: 1.67.0
   - apiVersion: v2
     appVersion: v1.66.0
     created: "2023-04-22T03:08:22.709642544Z"
@@ -937,6 +977,29 @@ entries:
     version: 0.1.0
   velero:
   - apiVersion: v2
+    appVersion: 1.11.0
+    created: "2023-04-29T03:31:18.778001872Z"
+    description: A Helm chart for velero
+    digest: dd591db38447c6a30b3c26bdbbd41311e15a53358cab00a0c659e8ff8f02fb58
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: hsiaoairplane@gmail.com
+      name: jenting
+    - email: jiangd@vmware.com
+      name: reasonerjt
+    - email: mqiu@vmware.com
+      name: qiuming-best
+    - email: yinw@vmware.com
+      name: ywk253100
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/velero-4.0.1/velero-4.0.1.tgz
+    version: 4.0.1
+  - apiVersion: v2
     appVersion: 1.10.2
     created: "2023-04-22T22:49:21.796448771Z"
     description: A Helm chart for velero
@@ -982,4 +1045,4 @@ entries:
     urls:
     - https://github.com/kube-core/crd-charts/releases/download/velero-2.31.3/velero-2.31.3.tgz
     version: 2.31.3
-generated: "2023-04-22T22:49:21.796585472Z"
+generated: "2023-04-29T03:31:18.778078274Z"
