@@ -7,6 +7,34 @@ entries:
         fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
+    appVersion: v1.11.2
+    created: "2023-05-12T20:39:33.193667355Z"
+    description: A Helm chart for cert-manager
+    digest: 3c432325114b49292b5c57445ecda950854eefd6cb7e4c9f70d1021844f30320
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    kubeVersion: '>= 1.21.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/cert-manager-v1.11.2/cert-manager-v1.11.2.tgz
+    version: v1.11.2
+  - annotations:
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v1
     appVersion: v1.11.1
     created: "2023-04-22T22:49:17.507440175Z"
     description: A Helm chart for cert-manager
@@ -228,6 +256,30 @@ entries:
     - https://github.com/kube-core/crd-charts/releases/download/eck-operator-2.4.0/eck-operator-2.4.0.tgz
     version: 2.4.0
   external-dns:
+  - annotations:
+      category: DeveloperTools
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.13.4
+    created: "2023-05-12T20:39:34.300879123Z"
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: 388151cba15288c589d4178565790d33faf7ce95d9adae7032cf8a4e27cb511f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: external-dns
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/external-dns
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/external-dns-6.20.1/external-dns-6.20.1.tgz
+    version: 6.20.1
   - annotations:
       category: DeveloperTools
       licenses: Apache-2.0
@@ -569,6 +621,39 @@ entries:
   kyverno:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: support for webhook annotations in config map
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kyverno.io/docs
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: v1.9.3
+    created: "2023-05-12T20:39:36.996521209Z"
+    description: Kubernetes Native Policy Management
+    digest: 0e35ea1f9bf171807fe58009cca14ec5691eb6c47fb225f71005a700ffd0601c
+    home: https://kyverno.io/
+    icon: https://github.com/kyverno/kyverno/raw/main/img/logo.png
+    keywords:
+    - kubernetes
+    - nirmata
+    - policy agent
+    - validating webhook
+    - admissions controller
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Nirmata
+      url: https://kyverno.io/
+    name: kyverno
+    sources:
+    - https://github.com/kyverno/kyverno
+    type: application
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/kyverno-2.7.3/kyverno-2.7.3.tgz
+    version: 2.7.3
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Syntax change for webhooksCleanup switch to match with the rest of the file
         - kind: fixed
@@ -666,6 +751,30 @@ entries:
     - https://github.com/kube-core/crd-charts/releases/download/logging-operator-3.17.8/logging-operator-3.17.8.tgz
     version: 3.17.8
   mongodb-atlas-operator:
+  - apiVersion: v2
+    appVersion: 1.7.3
+    created: "2023-05-12T20:39:37.660685668Z"
+    description: 'MongoDB Atlas Operator - a Helm chart for installing and upgrading
+      Atlas Operator: the official Kubernetes operator allowing to manage MongoDB
+      Atlas resources from Kubernetes'
+    digest: ade4ee0cc82d1ddd1e0cc471ca12e68aa8e9ee8f677f3ee635d76d6e741f0b77
+    home: https://github.com/mongodb/mongodb-atlas-kubernetes
+    icon: https://camo.githubusercontent.com/d473c25e361fb2206f06bdcf24028e8d52bc30d1/68747470733a2f2f6d6f6e676f64622d6b756265726e657465732d6f70657261746f722e73332e616d617a6f6e6177732e636f6d2f696d672f4c6561662d466f7265737425343032782e706e67
+    keywords:
+    - mongodb
+    - atlas
+    - database
+    - cluster
+    - nosql
+    kubeVersion: '>=1.15.0-0'
+    maintainers:
+    - email: support@mongodb.com
+      name: MongoDB
+    name: mongodb-atlas-operator
+    type: application
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/mongodb-atlas-operator-1.7.3/mongodb-atlas-operator-1.7.3.tgz
+    version: 1.7.3
   - apiVersion: v2
     appVersion: 1.7.2
     created: "2023-04-22T22:49:20.397628555Z"
@@ -780,6 +889,16 @@ entries:
   pyrra:
   - apiVersion: v2
     appVersion: v0.5.7
+    created: "2023-05-12T20:39:38.310049192Z"
+    description: SLO manager and alert generator
+    digest: b23c3d06c709e74035fcf4de9c93f96848494caab81d8f923858b780a579c820
+    name: pyrra
+    type: application
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/pyrra-0.7.1/pyrra-0.7.1.tgz
+    version: 0.7.1
+  - apiVersion: v2
+    appVersion: v0.5.7
     created: "2023-04-22T22:49:20.792196052Z"
     description: SLO manager and alert generator
     digest: c873621c642d851dfa9482a1c1f10650fdcc0e896bc0b92cff84c1e2c03b16f1
@@ -799,6 +918,34 @@ entries:
     - https://github.com/kube-core/crd-charts/releases/download/pyrra-0.4.1/pyrra-0.4.1.tgz
     version: 0.4.1
   rabbitmq-cluster-operator:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.2.0
+    created: "2023-05-12T20:39:38.520297017Z"
+    description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
+      management, and operations of RabbitMQ clusters running on Kubernetes.
+    digest: c651eeece1f01aa40b4b835cd54a4be4d79eaa996af6f82bff1ef2f1e165a3f7
+    home: https://github.com/rabbitmq/cluster-operator
+    icon: https://bitnami.com/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - operator
+    - infrastructure
+    - message queue
+    - AMQP
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: rabbitmq-cluster-operator
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq-cluster-operator
+    - https://github.com/rabbitmq/cluster-operator
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/rabbitmq-cluster-operator-3.3.2/rabbitmq-cluster-operator-3.3.2.tgz
+    version: 3.3.2
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
@@ -966,6 +1113,16 @@ entries:
     version: 0.5.3
   tekton:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-05-12T20:39:39.549157396Z"
+    description: A Helm chart for Kubernetes
+    digest: 42d53e16a00809501bd2d7c2a45a2953cfb679624625a36663ca4ac958842937
+    name: tekton
+    type: application
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/tekton-0.1.1/tekton-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2023-04-22T03:08:25.155720084Z"
     description: A Helm chart for Kubernetes
@@ -976,6 +1133,29 @@ entries:
     - https://github.com/kube-core/crd-charts/releases/download/tekton-0.1.0/tekton-0.1.0.tgz
     version: 0.1.0
   velero:
+  - apiVersion: v2
+    appVersion: 1.11.0
+    created: "2023-05-12T20:39:39.796430531Z"
+    description: A Helm chart for velero
+    digest: 490bd3511cf60cb61ab5f550cde05e318259b08e8eb56294ddf0430cad9d745e
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: hsiaoairplane@gmail.com
+      name: jenting
+    - email: jiangd@vmware.com
+      name: reasonerjt
+    - email: mqiu@vmware.com
+      name: qiuming-best
+    - email: yinw@vmware.com
+      name: ywk253100
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - https://github.com/kube-core/dist-crds/releases/download/velero-4.0.2/velero-4.0.2.tgz
+    version: 4.0.2
   - apiVersion: v2
     appVersion: 1.11.0
     created: "2023-04-29T03:31:18.778001872Z"
@@ -1045,4 +1225,4 @@ entries:
     urls:
     - https://github.com/kube-core/crd-charts/releases/download/velero-2.31.3/velero-2.31.3.tgz
     version: 2.31.3
-generated: "2023-04-29T03:31:18.778078274Z"
+generated: "2023-05-12T20:39:39.796708234Z"
